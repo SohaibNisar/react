@@ -1,0 +1,38 @@
+.salary.container {
+    padding: 20px;
+    width: 100%;
+}
+
+.salary td,
+.salary th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px 15px;
+}
+
+.salary table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.salary.container div {
+    max-width: 350px;
+    background: #fff;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #999;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .salary.container div:first-child {
+        overflow-x: scroll;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .salary.container div:last-child {
+        overflow-x: scroll;
+    }
+}
