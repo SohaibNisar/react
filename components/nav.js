@@ -9,13 +9,13 @@ class Nav extends Component{
         this.state={
             toggle:true
         }
-        if (window.innerWidth <= 600) {
+        if (window.innerWidth <= 764) {
             this.state.toggle=false;
         }
         
     }
     browserResize=()=>{
-        if (window.innerWidth <= 600) {
+        if (window.innerWidth <= 764) {
             this.setState({toggle: false});
         }
         else{

@@ -26,7 +26,6 @@ body #root>ul li {
     position: relative;
     letter-spacing: 1px;
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 10px;
 }
 
 a {
@@ -68,7 +67,7 @@ body ul li ul li ul {
 
 #logo {
     color: #fff;
-    padding: 10px 15px;
+    padding: 15px 15px;
     font-weight: bolder;
 }
 
@@ -120,7 +119,7 @@ body ul li ul li ul {
     background-color: #009688;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 764px) {
     .nav-toggle {
         display: inline-block;
     }
@@ -134,6 +133,7 @@ body ul li ul li ul {
         text-align: left;
         padding-left: 0;
         padding-right: 0;
+        margin: 0 !important;
         float: left;
     }
     body ul li ul {
@@ -156,13 +156,15 @@ body ul li ul li ul {
     }
 
     body #root>ul li {
-        margin-left: 10px;
         margin-top: 10px;
     }
     
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 764px) {
+    body #root>ul li {
+        margin-left: 10px;
+    }
     .hidden {
         height: auto !important;
         visibility: visible !important;
